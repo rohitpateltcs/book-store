@@ -6,6 +6,7 @@ import {
   SearchIcon,
   ShoppingBagIcon,
 } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,20 +19,23 @@ const Header = () => {
         <SearchIcon className="search__icon" />
       </div>
       <div className="header_items">
-        <div className="items_option">
-          <HomeIcon className="home_icon" />
-          <span>Home</span>
-        </div>
+        <Link to="/">
+          <div className="items_option">
+            <HomeIcon className="home_icon" />
+            <span id="span">Home</span>
+          </div>
+        </Link>
 
         <div className="items_option">
           <BookOpenIcon className="home_icon" />
-          <span>Books Categories</span>
+          <span id="span">Books Categories</span>
         </div>
-
-        <div className="items_option">
-          <ShoppingBagIcon className="home_icon" />
-          <span>My List</span>
-        </div>
+        <Link to="/mylist">
+          <div className="items_option">
+            <ShoppingBagIcon className="home_icon" />
+            <span id="span">My List</span>
+          </div>
+        </Link>
       </div>
       <div className="mobileView_search">
         <SearchIcon />

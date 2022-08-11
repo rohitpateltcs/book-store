@@ -5,6 +5,8 @@
   height: 64px;
   background-color: #01147c;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -46,6 +48,7 @@
 .home_icon {
   height: 24px;
   width: 24px;
+  text-decoration: none;
 }
 .header_items span {
   margin-left: 2px;
@@ -53,6 +56,13 @@
 .items_option {
   display: flex;
   align-items: center;
+  color: #f6f6f6;
+}
+#span {
+  color: rgb(246, 85, 85);
+}
+:link {
+  text-decoration: none;
 }
 .login_option {
   margin-left: 20px;
@@ -81,5 +91,6 @@
     margin-left: 0;
     width: 70%;
     font-size: medium;
+    text-decoration: none;
   }
 }
